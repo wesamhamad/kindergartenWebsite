@@ -1,0 +1,241 @@
+/* body {
+  font-family: "Noto Sans Arabic", sans-serif;
+  background-color: #fefeff;
+  background-image: url(../images/bg-body.jpeg);
+} */
+/* why section */
+#Activity_title {
+  text-align: center;
+  color: orange;
+  font-weight: 600;
+}
+
+.common_style p {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* .imageGrid {
+    line-height: 0;
+  } */
+.imageGrid .tile {
+  width: 32.22%;
+  min-height: 20em;
+  line-height: 1.2;
+  display: inline-block;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+
+  color: #fff;
+  font-family: "Verdana", sans-serif;
+  text-shadow: 2px 2px 2px #000;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.imageGrid .tile:before {
+  content: "";
+  background-color: rgba(15, 15, 15, 0.5);
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: absolute;
+}
+
+.imageGrid .tile:hover:before {
+  display: none;
+}
+
+.imageGrid .tile .textWrapper {
+  text-align: center;
+  vertical-align: middle;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.75em;
+}
+
+.imageGrid .tile .textWrapper .content {
+  display: none;
+}
+
+.imageGrid .tile:hover .textWrapper .content {
+  display: block;
+}
+
+.imageGrid .tile:hover .textWrapper .content h2 {
+  margin: 0;
+}
+
+/* end why section */
+
+/* contact section */
+
+#container {
+  width: 60%;
+  margin: 80px auto 150px auto;
+}
+
+h1 {
+  font-size: 25px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* === CONTACTFORM === */
+.contactForm {
+  background-color: #eee;
+  width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+.contactForm form {
+  width: 60%;
+  padding: 50px 30px 70px 30px;
+}
+.contactForm .name input,
+.contactForm .email input,
+.contactForm textarea {
+  width: 100%;
+  height: 25px;
+  text-align: right;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  color: #5a5a5a;
+}
+.contactForm .name input:focus,
+.contactForm .email input:focus,
+.contactForm textarea:focus {
+  outline: none;
+  border: 1px solid #097770;
+}
+.contactForm textarea {
+  height: 80px;
+  resize: none;
+}
+::placeholder {
+  color: #aaa;
+}
+.contactForm .service span {
+  margin-right: 20px;
+}
+.contactForm .service label {
+  margin-left: 10px;
+  font-size: 12px;
+}
+.contactForm button {
+  float: right;
+  background-color: #d74d71;
+  padding: 10px 15px;
+  border: #d74d71;
+  color: #fff;
+  clear: both;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 1px #b8956d 0 0 10px #b8956d;
+  margin-top: 20px;
+}
+.contactForm button:focus {
+  outline: none;
+}
+
+#Contact_us {
+  color: #d74d71;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* === MOREINFO === */
+.moreInfo {
+  background-color: #7ac872;
+  width: 230px;
+  color: #fff;
+  padding: 70px 40px;
+  border-radius: 10px;
+  position: absolute;
+  top: 100px;
+  right: -150px;
+  box-shadow: 0 0 0 #777777, 0 0 20px #777777;
+}
+.moreInfo h1 span {
+  font-size: 10px;
+  color: #b8956d;
+}
+.moreInfo p i {
+  margin-right: 10px;
+  color: #b8956d;
+}
+.moreInfo .city span {
+  font-size: 16px;
+  font-weight: bold;
+}
+.moreInfo .cityText {
+  margin-left: 23px;
+}
+.moreInfo .socialIcons i {
+  color: #fff;
+  font-size: 15px;
+  margin: 20px 30px 0 0;
+}
+.moreInfo .socialIcons i:hover {
+  background: #ff568c;
+}
+
+#MoreInformation {
+  color: #d74d71;
+  text-align: center;
+  font-weight: 600;
+}
+
+#MoreContact {
+  text-align: center;
+}
+
+/* === MEDIA QUERIES 1000PX === */
+@media only screen and (max-width: 1000px) {
+  #container {
+    width: 90%;
+  }
+  .contactForm {
+    width: 70%;
+  }
+}
+
+/* === MEDIA QUERIES 700PX === */
+@media only screen and (max-width: 700px) {
+  .contactForm {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .contactForm form {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .moreInfo {
+    top: 550px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .contactForm .service span {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .contactForm .service span br {
+    display: none;
+  }
+  .contactForm .service label {
+    margin-left: 0;
+    font-size: 12px;
+  }
+}
+/* end contact section */
